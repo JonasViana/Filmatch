@@ -1,0 +1,42 @@
+@media screen and (max-width: 480px) {
+  .mainCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .apresentacao__titulo {
+    font-size: 1.5rem;
+    width: 25rem;
+  }
+
+  .apresentacao__descricao {
+    font-size: 1rem;
+    width: 25rem;
+  }
+
+  .apresentacao__img {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    padding-left: 0 !important;
+  }
+
+  .poster {
+    margin-top: 2rem;
+    padding-left: 1.8rem !important;
+    width: 25rem;
+  }
+
+  .formulario__cadastro {
+    width: 25rem !important;
+    height: fit-content !important;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .input__cadastro {
+    width: 20rem !important;
+    height: 1.7rem;
+  }
+}

@@ -1,0 +1,34 @@
+<header>
+  <div class="logo-name">
+    <a href="/movies">Filmatch</a>
+  </div>
+  <nav>
+    <ul class="nav_links">
+      <li><a href="/movies">Sessões</a></li>
+      <li><a href="/suporte">Contato</a></li>
+      <form action="/resultadobusca/pesquisa" method="POST">
+        <input type="search" list="filmes" name="pesquisa">
+          <datalist id="filmes">
+            <option value="Uncharted - Fora do Mapa"></option>
+            <option value="Thor: Amor e Trovão"></option>
+            <option value="Sonic 2: O Filme"></option>
+            <option value="O Homem do Norte"></option>
+            <option value="Doutor Estranho no Multiverso da Loucura"></option>
+            <option value="Batman"></option>
+            <option value="Tudo em Todo Lugar ao Mesmo Tempo"></option>
+            <option value="Top Gun: Maverick"></option>
+            <option value="Cidade Perdida"></option>
+            <option value="Morbius"></option>
+        </datalist>
+        <button class="pesquisa_header">Pesquisar</button>
+      </form>
+    </ul>
+  </nav> 
+  <%  if(typeof usuario === 'undefined'){  %>
+  <a class="btn" href="/login">Login</a>
+
+  <% } else {  %>
+     <h2> <a href="/perfil"> Olá <%= usuario.nome %></a></h2>
+     <a class="logout" href="/movies/logout">Logout</a>
+    <% }%>
+</header>

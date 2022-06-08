@@ -1,0 +1,35 @@
+.ticket{
+    width: 13rem;
+    height: 10rem;
+    background:rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding-top: 1rem;
+}
+
+.ticket button{
+    display: inline-block;
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: var(--main-color);
+    color: var(--white-light);
+    line-height: 1.5;
+    user-select: none;
+    border: none;
+    margin-left: 1rem;
+}
+
+.ticket button:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+    transition: 0.3s;
+}

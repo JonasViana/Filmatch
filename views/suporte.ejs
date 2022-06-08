@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <section>
+        <div class="section_title">
+          <h2>
+            Fale Conosco!
+            <img src="/images/icons/qa.svg" alt="Imagem de Quest and Answer" />
+          </h2>
+        </div>
+        <div  class="container formCont">
+          <form action="https://formsubmit.co/suporte.filmatch@gmail.com" method="POST" class="suportForm">
+            <label for="nome">Nome e Sobrenome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputText"
+              required
+            />
+            <label for="email">Email</label>
+            <input name="email"  class="inputText" type="email" required>
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              name="assunto"
+              id="assunto"
+              class="inputText"
+              required
+            />
+            <label for="msg">Mensagem</label>
+            <textarea
+              placeholder="Be nice!"
+              type="textarea"
+              name="msg"
+              id="msg"
+              rows="5"
+              class="inputText"
+              required
+            ></textarea>
+            <input type="hidden" name="_next" value="http://localhost:3000/movies">
+            <input type="hidden" name="_captcha" value="false">
+            <button class="buttom_suporte" type="submit">Send</button>
+          </form>
+          <div>
+            <img src="/images/3dQa.png" alt="" />
+          </div>
+        </div>
+        <p class="disclaimer">
+          Respostas em até 2 dias úteis. Horário da quipe de suporte: segunda a
+          sexta, 09:00 as 18:00.
+        </p>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

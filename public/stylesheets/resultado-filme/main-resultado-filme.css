@@ -1,0 +1,19 @@
+.main__resultado{
+    display: flex;
+    min-height: calc(100vh - 9.9rem);
+    justify-content: space-evenly ;
+}
+
+.linha__vertical{
+    background: #383838;
+    height: 40rem;
+    margin: 4rem 0 0 3rem;
+    width: 3px;
+}
+
+.linha__horizontal{
+    width: 35rem;
+    height: 3px;
+    background: #383838;
+}
+

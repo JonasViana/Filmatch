@@ -1,0 +1,7 @@
+.poster__resultado{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 10rem;
+}

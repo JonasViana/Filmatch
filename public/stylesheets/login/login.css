@@ -1,0 +1,55 @@
+.mainLogin{
+    display: flex;
+    justify-content: center;
+}
+
+.formLogin{
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 31.25rem;
+    margin-top: 6.125rem;
+    padding: 2rem;
+    width: 31.25rem;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.labelClass{
+    display: flex;
+    justify-content: center
+}
+
+.inputLogin{
+    border-radius: 5px;
+    border: none;
+    height: 1.2rem;
+}
+
+.botaoLogin{
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 30px;
+    color: var(--white-light);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.5;
+    margin-top: 4rem;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    user-select: none;
+}
+
+.botaoLogin:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+}

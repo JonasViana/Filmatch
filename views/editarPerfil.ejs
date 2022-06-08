@@ -1,0 +1,39 @@
+<%-include('./partials/head')%>
+
+<body>
+    <%-include('./partials/header')%>
+    <main class="main__painel__usuario">
+        <div class="configuracoes">
+            <p><strong>Configuraçoes</strong></p>
+            <a class="link__config" href="/perfilUsuario"><p>Geral</p></a>
+            <a class="link__config" href="/editarPerfil"><p>Editar Perfil</p></a>
+        </div>
+        <div class="editar__configuracoes">
+            <p>Informações sobre você</p>
+            <form action="/editarPerfil/editar" method="POST">
+                <div class="opcoes__configuracoes">
+                <div class="input__dados">
+                    <label for="">Sobre Mim</label>
+                    <textarea name="sobremim" id="" cols="82" rows="10" required></textarea>
+                </div>
+                <div class="input__dados">
+                    <label for="">Ocupação</label>
+                    <input name="ocupacao" class="input__config" type="text" required>
+                </div>
+                <div class="input__dados">
+                    <label for="">Interesses e Hobbies</label>
+                    <input name="interesses" class="input__config" type="text" required>
+                </div>
+                <div class="input__dados">
+                    <label for="">Filme Favorito</label>
+                    <input name="filme" class="input__config" type="text" required>
+                </div>
+                <div class="button__salvar__config">
+                    <button class="button__config">Salvar Informações</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>

@@ -1,0 +1,42 @@
+.main__sessao_criada{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.sessao__criada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(196, 196, 196, 0.1);
+    padding: 1rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+.info_sessoes_criadas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15rem;
+    margin-bottom: 1rem;
+}
+
+.sessao__criada button {
+    border: none;
+    border-radius: 5px;
+    background-color:#8e0e00;
+    color: white;
+    height: 2rem;
+    width: 13rem;
+}
+
+.sessao__criada button:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+}

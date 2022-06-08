@@ -1,0 +1,41 @@
+.main__painel__usuario{
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px){
+    .main__painel__usuario{
+        height: fit-content;
+    }
+    
+    .configuracoes{
+        display: none;
+    }
+
+    .link__config p{
+        display: none;
+    }
+
+    .main__painel__usuario{
+        flex-direction: column;
+    }
+    .editar__configuracoes{
+        margin-top: 1rem;
+        margin-bottom: 3rem !important;
+        height: 43rem !important;
+        width: 50vh !important;
+    }
+    .input__config{
+        width: 20rem !important;
+    }
+
+    .button__salvar__config{
+        padding-top: 0 !important;
+    }
+}
+
+
+

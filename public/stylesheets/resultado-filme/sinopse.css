@@ -1,0 +1,18 @@
+.sinopse__principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.sinopse__busca{
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 5px;
+    height: 19rem;
+    padding: 1rem;
+    margin: 3rem 0 0 3rem;
+    width: 41rem;
+
+}
+
+.info__filme{
+    margin-left: 3rem;
+}

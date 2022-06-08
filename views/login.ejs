@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+    <main class="mainLogin">
+        <form class="formLogin" action="/login" method="POST">
+            <h2 class="login">Login</h2>
+
+            <% if (typeof erro !== 'undefined'){ %>
+                <p><%= erro %></p>
+           <% } %>
+            <p>Esqueceu sua senha ou login? Clique <a href="">aqui</a>.</p>
+            <label class="labelClass" for="email">Email</label>
+            <input name="email" class="inputLogin" type="text">
+            <label class="labelClass" for="senha">Senha</label>
+            <input name="senha" class="inputLogin" type="password">
+            <button class="botaoLogin">Login</button>
+            <p>Não tem uma conta?<a href="/">Crie uma aqui.</a></p>
+        </form>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

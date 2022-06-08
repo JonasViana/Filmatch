@@ -1,0 +1,69 @@
+<%-include('./partials/head')%>
+
+<body>
+  <%-include('./partials/header')%>
+  <main class="main__resultado">
+      <div class="poster__resultado">
+        <img
+          src= "<%= filmes[filmeID].poster %>" width="285px" height="400px"
+          alt=""
+        />
+        <div >
+          <p><strong><%= filmes[filmeID].nome %> </strong></p>
+        </div>
+      </div>
+      <div>
+       <div class="sinopse__principal">
+        <div class="sinopse__busca">
+          <p ><strong >Sinopse</strong></p>
+          <p>
+            <%= filmes[filmeID].descricao  %> 
+          </p>
+            <p>Disponível em:</p>
+            <p> <%= filmes[filmeID].streaming  %> </p>
+        </div>
+        <p class="info__filme"> Genero : <%= filmes[filmeID].genero %>  </p>
+        <div class="proximas__sessoes">
+          <p class="horario__sessoes"><strong>Próxima sessão de <%= filmes[filmeID].nome %> </strong></p>
+          <div class="proxima__sessao" >
+            <p><%= filmes[filmeID].nome %></p>
+            <p>Dia: <%= lastSession.data.split('-').reverse().join('/') %></p>
+            <p>Hora :<%= lastSession.horario %></p>
+          </div>
+          <a href="/criarSessao"><button class="botao__sessoes">Criar uma nova sessão</button></a>
+        </div>
+       </div>
+      </div>
+      <div class="linha__vertical"></div>
+    <section class="forum__resultado" >
+      <p>
+        <strong>Avaliaçoes da critica sobre : <%= filmes[filmeID].nome %></strong>
+      </p>
+      <div class="atividades__forum" >
+        <div class="titulo__topico">
+       <strong><p class="nome__forum"> <%= filmes[filmeID].autorCritica1 %></p></strong>
+          <p class="conteudo__forum">
+            <%= filmes[filmeID].critica1 %>
+          </p>
+        </div>
+      </div>
+      <div class="horario__forum">
+        <a href="<%=filmes[filmeID].linkcritica1%> " target="_blank"><button class="botao__forum" >Ver mais</button></a>
+      </div>
+      <div class="linha__horizontal"></div>
+      <div class="atividades__forum" >
+        <div class="titulo__topico">
+          <strong><p class="nome__forum"><%= filmes[filmeID].autorCritica2 %></p></strong>
+          <p class="conteudo__forum">
+            <%= filmes[filmeID].critica2 %>
+          </p>
+        </div>
+      </div>
+      <div class="horario__forum">
+        <a href="<%=filmes[filmeID].linkcritica2%> " target="_blank"><button class="botao__forum" >Ver mais</button></a>
+      </div>
+      <div class="linha__horizontal"></div>
+    </section>
+  </main>
+  <%-include('./partials/footer')%>
+</body>

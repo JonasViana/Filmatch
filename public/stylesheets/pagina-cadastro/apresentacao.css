@@ -1,0 +1,36 @@
+.section__cadastro{
+  margin-top: 3rem;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  width: 65rem;
+}
+
+.apresentacao__titulo {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0%;
+  text-transform: none;
+}
+
+.apresentacao__descricao {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  line-height:3rem;
+}
+
+.apresentacao__img {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.poster {
+  padding: 0;
+  padding-left: 2rem;
+  height: 22rem;
+  width: 31rem;
+}

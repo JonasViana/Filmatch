@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* variables */
+:root {
+  --main-color: #8E0E00;
+  --main-light: #9c382d;
+  --dark: #0d0d0d;
+  --white: #f5f4f3;
+  --white-light: #c8c8c8;
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  --cursive-font: 'Dancing Script', cursive;
+  scroll-behavior: smooth;
+}
+
+/* Global settings */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: var(--white-light);
+  background-image: url('/images/background.svg');
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section_title {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.section_title img {
+  width: 40px;
+  height: 40px;
+}
+
+/* buttons */
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--main-color);
+  color: var(--white-light);
+  line-height: 1.5;
+  user-select: none;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--white-light);
+  color: var(--main-light);
+  opacity: 0.8;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: rgba(13, 13, 13);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+li, a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+}
+
+header .logo-name a {
+  background: -webkit-linear-gradient(to right, var(--white), var(--main-color));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--white), var(--main-color));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_links input{
+ 
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  margin-left: 3.125rem;
+  font-family: 'poppins';
+}
+
+.pesquisa_header{
+    display: inline-block;
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: var(--main-color);
+    color: var(--white-light);
+    line-height: 1.5;
+    user-select: none;
+    border: none;
+    margin-left: 1rem;
+}
+
+.pesquisa_header:hover{
+  background-color: var(--white-light);
+  color: var(--main-light);
+  opacity: 0.8;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px 0px 0px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: var(--main-light);
+}
+
+.logout{
+  display: inline-block;
+  padding: 5px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--main-color);
+  color: var(--white-light);
+  line-height: 1.5;
+  user-select: none;
+  border: none;
+  margin-left: 1rem;
+}
+
+.logout:hover{
+  background-color: var(--white-light);
+  color: var(--main-light);
+  opacity: 0.8;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #0d0d0d;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+}

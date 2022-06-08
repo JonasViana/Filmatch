@@ -1,0 +1,38 @@
+.main_tudo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.poster__Django{
+    display: flex;
+}
+
+.main__resultado__busca{
+    background: rgba(196, 196, 196, 0.1);
+    width: 97.75rem;
+    height: 55rem;
+}
+
+.titulo__poster{
+    margin-left: 1.5rem ;
+}
+
+.botao__seila{
+    width: 6.1875rem;
+    height: 2.0625rem;
+    background-color: #8E0E00;
+    color: #f5f4f3;
+    border-radius: 5px;
+    border: none;
+    font-family: 'poppins';
+}
+
+.botao__seila:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+

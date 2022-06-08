@@ -1,0 +1,32 @@
+.input__titulo{
+    background-color: #2D2D2D;
+    border:none;
+    border-radius: 5px;
+    color: #f5f4f3;
+    height: 1.8rem;
+    width: 38rem;
+}
+
+.input__descricao{
+    border-radius: 5px;
+    background-color: #2D2D2D;
+    border:none;
+    color: #f5f4f3;
+    height: 6rem ;
+    width: 38rem;
+}
+
+.input__data{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.input__horario{
+    background-color:#2D2D2D ;
+    border:none;
+    border-radius: 5px;
+    color: #f5f4f3;
+    height: 1.5rem;
+    width: 9rem;
+}

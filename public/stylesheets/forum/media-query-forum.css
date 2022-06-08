@@ -1,0 +1,22 @@
+@media screen and (max-width: 480px){
+    
+    .main__forum{
+      height: 80rem;
+    }
+    .mensagens__forum{
+        width: 24rem;
+      }
+
+      .informaçoes__importantes{
+        height: 7rem;
+        width:24rem ;
+      }
+
+      .conteudo__informaçoes{
+       font-size: 1rem;
+      }
+
+      .ultima__publicacao{
+          display: none;
+      }
+}

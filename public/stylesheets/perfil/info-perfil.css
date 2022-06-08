@@ -1,0 +1,91 @@
+.info__perfil{
+    align-items: flex-end;
+    background-image: url('/images/uploads/capa/avatar');
+    display: flex;
+    height: 15rem;
+    justify-content: space-around;
+    width: 100vh;
+}
+
+.img__perfil{
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+}
+
+.background__info{
+    border-radius: 5px;
+    height: fit-content;
+    padding: 0.3rem;
+    width: fit-content;
+    color: #cfcccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.seguidores__perfil{
+    align-items: center;
+    background:#2C2C2C; 
+    border-radius: 5px;
+    display: flex;
+    height: 3.7rem ;
+    justify-content: space-around;
+    width: 100vh;
+}
+
+.botao__perfil{
+    background-color: #8E0E00;
+    border: none;
+    border-radius: 5px;
+    color: #f5f4f3;
+    height:1.4rem;
+    margin-bottom: 16px;
+    width: 3.3rem;
+}
+
+.botao__perfil:hover {
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+}
+
+.text__alterar__perfil{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.input__avatar{
+    margin-left: 1rem;
+}
+.input__files{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20.75rem;
+    height: 38rem;
+    background-color: rgba(196, 196, 196, 0.1);
+    border-radius: 10px;
+    justify-content: flex-start;
+  
+}
+
+.img__pipoca{
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+.submit__capa{
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+
+.alterar__avatar{
+    background-color:rgba(196, 196, 196, 0.1);
+    margin-top: 1rem;
+}
+
+.alterar__capa{
+    background-color:rgba(196, 196, 196, 0.1);
+    margin-top: 3rem;
+}

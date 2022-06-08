@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+
+    <main class="main__top__movies">
+      <section>
+        <div class="section_title">
+          <h2>
+            Filmes mais populares
+            <img src="/images/icons/clakete.svg" alt="Imagem de Claquete" />
+          </h2>
+        </div>
+        <div class="container">
+          <div class="top_movies">
+            <div class="movie_item">
+              <a href="http://localhost:3000/resultadofilme/4">
+                <img src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2022/04/doutor-estranho-2-poster.jpg" alt="doutor-estranho-2-poster" />
+                <div >
+                  <p class="title_movie">
+                    Doutor Estranho no Multiverso da Loucura
+                  </p></a>
+              </div>
+            </div>
+
+            <div class="movie_item">
+             <a href="http://localhost:3000/resultadofilme/9">
+              <img
+              src="https://portalpopline.com.br/wp-content/uploads/2022/02/morbius-nova-lenda-marvel.jpg"
+              alt="morbius-nova-lenda-marvel"
+            />
+            <div>
+              <p class="title_movie">Morbius</p>
+            </div>
+             </a>
+            </div>
+
+            <div class="movie_item">
+              <a href="http://localhost:3000/resultadofilme/0">
+                <img src='https://assets-prd.ignimgs.com/2022/01/13/uncharted-poster-full-1642086040683.jpg'   alt="uncharted-poster-full-1642086040683" />
+              <div class="title_movie">
+                <p>Uncharted</p>
+              </div>
+              </a>
+            </div>
+
+            <div class="movie_item">
+            <a href="http://localhost:3000/resultadofilme/1">
+              <img src="https://johto.legiaodosherois.com.br/wp-content/uploads/2020/11/legiao_U6yGmuMOotvg.jpg" alt="Thor" />
+              <div class="title_movie">
+                <p>Thor Amor e Trovão</p>
+              </div>
+            </a>
+            </div>
+
+            <div class="movie_item">
+              <a href="http://localhost:3000/resultadofilme/2">
+                <img
+                src="https://asset.vg247.com/sonic-2-poster.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/sonic-2-poster.jpg"
+                alt="Sonic-2"
+              />
+              <div class="title_movie">
+                <p>Sonic 2</p>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section_title">
+          <h2>
+            Próximas sessões
+            <img
+              src="/images/icons/calendar.svg"
+              alt="Imagem de calendário"
+              class="img_title"
+            />
+          </h2>
+        </div>
+        <div class="container">
+          <div class="next_session">
+              <div class="session">
+                <div>
+                  <p> <%= findSession[0].nome %>  </p>
+                  <p><%= findSession[0].horario %> Hrs</p>
+                </div>
+                <div>
+                  <a href="/sessaocriada/0" class="btn__juntar">Juntar-se</a>
+                  <p> Data <%= findSession[0].data.split('-').reverse().join('/') %></p>
+                </div>
+              </div>
+              <div class="session">
+                <div>
+                  <p><%= findSession[1].nome %></p>
+                  <p><%= findSession[1].horario %> Hrs</p>
+                </div>
+                <div>
+                  <a href="/sessaocriada/1" class="btn__juntar">Juntar-se</a>
+                  <p>Data <%= findSession[1].data.split('-').reverse().join('/') %></p>
+                </div>
+              </div>
+              <div class="session">
+                <div>
+                  <p><%= findSession[2].nome %></p>
+                  <p><%= findSession[2].horario %> Hrs</p>
+                </div>
+                <div>
+                  <a href="/sessaocriada/2" class="btn__juntar">Juntar-se</a>
+                  <p>Data <%= findSession[2].data.split('-').reverse().join('/') %></p>
+                </div>
+              </div>
+
+              <div class="session">
+                <div>
+                  <p><%= findSession[3].nome %></p>
+                  <p><%= findSession[3].horario %> Hrs</p>
+                </div>
+                <div>
+                  <a href="/sessaocriada/3" class="btn__juntar">Juntar-se</a>
+                  <p>Data<%= findSession[3].data.split('-').reverse().join('/') %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.input__dados{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre__mim{
+    height: 6rem;
+    width: 39rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'poppins';
+}

@@ -1,0 +1,11 @@
+.mensagens__forum{
+    background-color: #252525;
+    border-bottom: 5px solid #3d3d3d ;
+    border-radius: 5px;
+    height: 2rem;
+    width: 68rem;
+  }
+  
+  .mensagens__filmatch{
+    padding-left: 2rem;
+  }

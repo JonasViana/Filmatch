@@ -1,0 +1,35 @@
+.proximas__sessoes{
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 5px;
+    height: 19rem;
+    margin-left: 3rem;
+    padding: 1rem;
+    width: 41rem;
+}
+
+.proxima__sessao{
+    background: #202020;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    height: 2.5rem;
+    margin: 0rem 0 0 0rem;
+    width: 39rem;
+}
+
+.botao__sessoes{
+    border: none;
+    border-radius: 5px;
+    background-color:#8e0e00;
+    color: white;
+    height: 2rem;
+    width: 13rem;
+    margin-left: 14rem ;
+    margin-top: 5rem;
+}
+
+.botao__sessoes:hover {
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+}

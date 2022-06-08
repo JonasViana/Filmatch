@@ -1,0 +1,49 @@
+<%-include('./partials/head')%>
+
+<body>
+    <%-include('./partials/header')%>
+    <main class="main__perfil">
+    <div class="fundo__perfil">
+        <div class="info__perfil">
+            <img class="img__perfil" src="/images/uploads/avatar" alt="">
+            <p class="background__info"><%= usuario.nome  %> </p>
+            <p class="background__info">Filme Preferido: <%= usuario.filmePref %>  </p>
+        </div>
+        <div class="conteudo__perfil">
+            <div class="sobreMim__Perfil">
+              <% if(typeof usuario == usuario){ %>
+                <% } else {  %>
+                   <h4> Biografia</h4>
+                    <p> <%= usuario.bio  %> </p>
+                  <% }%>
+                <h4>Ocupação</h4>
+                <p><%= usuario.ocupacao  %> </p>
+                <h4>Interesses e Hobbies</h4>
+                <p><%= usuario.hobbies  %> </p>
+                <h4>Filme Favorito</h4>
+                <p> <%= usuario.filmePref  %> </p>
+                <button class="alterar__perfil"><a href="/perfilusuario">Alterar perfil</a></button>
+            </div>
+            <div class="input__files">
+              <div class="alterar__avatar">
+                <p class="text__alterar__perfil">Alterar foto de perfil</p>
+                  <form action="/perfil/avatar" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="avatar" class="input__avatar">
+                   <button class="submit__capa" type="submit">Enviar</button>
+                  </form>
+              </div>
+              <div class="alterar__capa">
+                <p class="text__alterar__perfil">Alterar foto de capa</p>
+                  <form action="/perfil/capa" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="avatar" class="input__avatar">
+                   <button class="submit__capa" type="submit">Enviar</button>
+                  </form>
+              </div>
+              <img class="img__pipoca" src="https://cdn-icons.flaticon.com/png/512/3574/premium/3574820.png?token=exp=1654200050~hmac=74c1855f0d4ca17953fad5d8dabdb84e" height="200px" width="180px" alt="">
+            </div>
+        </div>
+    </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>
+

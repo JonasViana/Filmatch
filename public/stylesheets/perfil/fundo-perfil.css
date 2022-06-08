@@ -1,0 +1,10 @@
+.fundo__perfil{
+    align-items: center;
+    border-radius: 5px;
+    background: rgba(31, 29, 29, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 61rem;
+    justify-content: flex-start;
+    width: 78rem;
+}

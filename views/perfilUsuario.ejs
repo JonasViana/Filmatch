@@ -1,0 +1,26 @@
+<%-include('./partials/head')%>
+
+<body>
+    <%-include('./partials/header')%>
+    <main class="main__painel__usuario">
+        <div class="configuracoes">
+            <p><strong>Configuraçoes</strong></p>
+            <a class="link__config" href="/perfilUsuario"><p>Geral</p></a>
+            <a class="link__config" href="/editarPerfil"><p>Editar Perfil</p></a>
+        </div>
+        <div class="editar__configuracoes">
+            <p>Configuração geral da sua conta</p>
+                <div class="opcoes__configuracoes">
+                <div class="input__dados">
+                    <h3>Nome</h3>
+                    <p> <%= usuario.nome  %> </p>
+                </div>
+                <div class="input__dados">
+                    <h3>Email</h3>
+                    <p> <%- usuario.email  %> </p>
+                </div>
+                </div>
+        </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>

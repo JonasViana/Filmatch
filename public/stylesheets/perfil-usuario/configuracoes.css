@@ -1,0 +1,18 @@
+.configuracoes{
+    border-radius: 0.3rem;
+    background: rgba(34, 32, 32, 0.876);
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 46rem;
+    line-height: 3.1rem;
+    padding: 2.5rem;
+    width:23rem;
+}
+
+
+.link__config:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+    transition: 0.3s;
+}

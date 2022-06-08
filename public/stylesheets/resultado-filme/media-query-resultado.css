@@ -1,0 +1,41 @@
+@media screen and (max-width: 480px){
+    .main__resultado{
+        flex-direction: column;
+        height: 160rem;
+    }
+
+    .poster__resultado{
+        margin-left: 0.5rem;
+    }
+
+    .sinopse{
+        height: 22rem ;
+        margin-left: 1rem;
+        width: 23rem !important;
+    }
+
+    .proximas__sessoes{
+       
+        width: 23rem !important;
+    }
+
+    .proxima__sessao{
+        width: 18rem !important;
+    }
+
+    .botao__sessoes{
+        height: 2rem;
+        margin-left: 6rem !important;
+        width: 13rem;
+
+    }
+
+    .linha__vertical{
+        display: none;
+    }
+
+    .forum__resultado{
+        height: 52rem !important;
+        width: 23rem !important;
+    }
+}

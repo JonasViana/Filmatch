@@ -1,0 +1,46 @@
+<%-include('./partials/head')%>
+
+<body>
+  <%-include('./partials/header')%>
+  <main class="main__criar__sessao">
+    <section class="criar__sessao" >
+      <h2>Crie uma sessão</h2>
+      <form action="/criarSessao/criar" method="POST">
+        <h3>Titulo da sessão</h3>
+        <div>
+          <select class="select__filmes" name="nome">
+            <option value="<%= filmes[0].nome %>"> <%= filmes[0].nome %> </option>
+            <option value="<%= filmes[1].nome %>" selected><%= filmes[1].nome %></option>
+            <option value="<%= filmes[2].nome %>"><%= filmes[2].nome %></option>
+            <option value="<%= filmes[3].nome %>"><%= filmes[3].nome %></option>
+            <option value="<%= filmes[4].nome %>"><%= filmes[4].nome %></option>
+            <option value="<%= filmes[5].nome %>"><%= filmes[5].nome %></option>
+            <option value="<%= filmes[6].nome %>"><%= filmes[6].nome %></option>
+            <option value="<%= filmes[7].nome %>"><%= filmes[7].nome %></option>
+            <option value="<%= filmes[8].nome %>"><%= filmes[8].nome %></option>
+            <option value="<%= filmes[9].nome %>"><%= filmes[9].nome %></option>
+          </select>
+        </div>
+        <p>Descrição da Sessão</p>
+        <div><textarea class="input__descricao" name="descricao"></textarea></div>
+        <div class="input__data">
+          <div>
+            <p>Data</p>
+            <input class="input__horario" type="date" name="data" />
+          </div>
+         <div>
+          <p>Horário</p>
+          <input class="input__horario" type="time" name="horario" />
+         </div>
+        </div>
+        <p>Local</p>
+        <div><input class="input__titulo"  type="text" value="Link para o Discord" name="link"/></div>
+        <div class="linha__horizontal"></div>
+        <button class="botao__criar_sessao" type="submit">
+          <strong>Criar sessão</strong>
+        </button>
+      </form>
+    </section>
+  </main>
+  <%-include('./partials/footer')%>
+</body>

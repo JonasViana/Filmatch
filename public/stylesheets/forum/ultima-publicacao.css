@@ -1,0 +1,15 @@
+.ultima__publicacao{
+    background-color: #3d3d3d;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 11rem;
+    width: 19rem;
+  }
+  
+  .user__publicacao{
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    width: 4rem;
+  }
+  

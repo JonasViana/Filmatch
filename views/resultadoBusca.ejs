@@ -1,0 +1,62 @@
+<%-include('./partials/head')%>
+<body>
+    <%-include('./partials/header')%>
+    <main class="main_tudo">
+        <div class="main__resultado__busca">
+            <div>
+                <div>
+                    <p>Resultado da busca <strong>"<%= result.nome  %> "</strong></p>
+                </div>
+                <div class="poster__busca">
+                    <img src="<%= result.poster %> " width="200px" height="300px" alt="">
+                    <div class="titulo__poster">
+                        <p><%= result.nome  %> </p>
+                        <p>Genero : <%= result.genero %> </p>
+                        <p>Avaliação : <%= result.avaliacao  %> </p>
+                        <p>Faixa etária : <%= result.facha_etaria  %> </p>
+                        <a href="/resultadofilme/<%= result.id %>"><button class="botao__seila">Ver mais</button></a>
+                    </div>
+                </div> 
+                <p class="sinopse">Sinopse : <%= result.descricao %> </p>
+              </div>
+            <div>
+                <div class="next_session1">
+                    <p>Proximas sessoes de : <%= result.nome %> </p>
+                    <div class="session">
+                      <div>
+                        <p><%= resultSessions[0].nome %>    </p>
+                        <p>Hrs <%= resultSessions[0].horario %></p>
+                      </div>
+                      <div>
+                        <a href="/movies" class="btn__juntar">Home</a>
+                        <p>Data: <%= resultSessions[0].data %></p>
+                      </div>
+                    </div>
+                    <div class="session">
+                      <div>
+                        <p><%= resultSessions[1].nome %> </p>
+                        <p> Hrs <%= resultSessions[1].horario %></p>
+                      </div>
+                      <div>
+                        <a href="/movies" class="btn__juntar">Home</a>
+                        <p>Data: <%= resultSessions[1].data %> </p>
+                      </div>
+                    </div>
+                    <div class="session">
+                      <div>
+                        <p><%= resultSessions[1].nome %></p>
+                        <p> Hrs<%= resultSessions[1].horario %></p>
+                      </div>
+                      <div>
+                        <a href="/movies" class="btn__juntar">Home</a>
+                        <p>Data: <%= resultSessions[1].data.split('-').reverse().join('/') %></p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>

@@ -1,0 +1,37 @@
+@media screen and (max-width: 480px) {
+    .main__perfil{
+        justify-content: center !important;
+    }
+    .fundo__perfil{
+        background: none !important;
+        width: 100% !important;
+    }
+    .conteudo__perfil{
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+    }
+
+    .info__perfil{
+        width: 100% !important;
+    }
+
+    .seguidores__perfil{
+        font-size: 0.8rem !important;
+        width: 100% !important;
+    }
+
+    .atividades__recentes{
+        margin-left: 0 !important;
+        margin-bottom: 1rem !important;
+        width: 27rem !important;
+    }
+
+    .atividades__recentes__perfil{
+        width: 25rem !important;
+    }
+
+    .sobreMim__Perfil{
+        width: 27rem !important;
+    }
+}

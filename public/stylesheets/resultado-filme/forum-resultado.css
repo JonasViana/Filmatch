@@ -1,0 +1,55 @@
+.forum__resultado{
+    align-items: center;
+    align-content: center;
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height:41.5rem;
+    margin: 3rem 0 0 3rem;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 37rem;
+}
+
+.atividades__forum{
+    display: flex;
+}
+
+.user__forum{
+    height: 3rem;
+    width: 3rem;
+}
+
+.nome__forum{
+    margin: 0 0 0 1rem;
+}
+
+.conteudo__forum{
+    background-color:#48484899 ;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.horario__forum{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao__forum{
+    background-color:#8e0e00;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    color: white;
+    width: 6rem;
+}
+
+.botao__forum:hover {
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+}

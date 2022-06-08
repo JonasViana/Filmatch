@@ -1,0 +1,18 @@
+<%-include('./partials/head')%>
+<body>
+    <%-include('./partials/header')%>
+    <main class="main__sessao_criada">
+        <div class="sessao__criada">
+            <h2>Sessão criada com sucesso !  </h2>
+            <h3>Infomaçoes sobre a sessão</h3>
+            <div class="info_sessoes_criadas">
+                <p>Filme :  <%= findSession.nome  %></p>
+                <p>Dia :  <%= findSession.data.split('-').reverse().join('/')  %></p>
+                <p>Hora :  <%= findSession.horario  %></p>
+                <p>Link para o Discord :  <%= findSession.link %></p>
+            </div>
+            <a href="movies"><button>Voltar para home</button></a>
+        </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>

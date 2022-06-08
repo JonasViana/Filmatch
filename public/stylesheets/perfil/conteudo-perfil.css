@@ -1,0 +1,4 @@
+.conteudo__perfil{
+    display: flex;
+    flex-direction: row;
+}

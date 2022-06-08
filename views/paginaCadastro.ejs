@@ -1,0 +1,57 @@
+<%-include('./partials/head')%>
+
+<%-include('./partials/header')%>
+  <body>
+    <main class="mainCadastro">
+      <section class="section__cadastro">
+        <div class="apresentacao">
+          <h3 class="apresentacao__titulo">Seu serviço de  filmes favorito com os seus melhores amigos.</h3>
+          <p class="apresentacao__descricao">Filmatch foi pensado para criar novas amizades atraves de filmes, encontre ou crie uma  sessão de um filme que voce gosta, seja ele qual for, escolha sua plataforma de streaming preferida e assista filmes com novos e antigos amigos simultaneamente.</p>
+        </div>
+        <div class="apresentacao__img">
+          <img class="poster" src="/images/imagens-pagina-de-cadastro/posterLaranjaMecanica.svg" alt="Poster Laranja Mecanica" >
+          <img class="poster" src="/images/imagens-pagina-de-cadastro/Poster Odisseia Francesa (1).svg" alt="poster odisseia francesa" >
+        </div>
+      </section>
+      <section class="formulario__cadastro">
+        <% if(typeof(errors) != 'undefined'){ %>
+          <p>ERROR</p>
+          <ul>
+            <% errors.forEach((error) =>{ %>
+              <li><%= error.msg %></li>
+           <% }) %>
+          </ul>
+        <% } %>
+        <form class="form-cadastro" action="/users/criar" method="POST">
+          <div class="cadastro">
+            <strong><p>Cadastro</p></strong>
+            <p>Ja possui conta? <strong><a href="/login" style='text-decoration: none' >Clique aqui</a></strong></p>
+            <label for="nome">Nome</label>
+            <input class="input__cadastro" type="text" name="nome" id="nome" required>
+            <label for="email">Email</label>
+            <input class="input__cadastro" type="email" name="email" id="email" required>
+            <label for="senha">Senha</label>
+            <input class="input__cadastro" type="password" name="senha" id="senha" required>
+            <label for="confirmarSenha">Confirme Sua Senha</label>
+            <input class="input__cadastro" type="password" name="confirmarSenha" id="confirmarSenha" required>
+            <label for="dataDeNascimento">Data De Nascimento</label>
+            <input class="input__nascimento" type="date" name="dataDeNascimento" id="dataDeNascimento" required>
+            <label for="gerero">Gênero</label>
+            <select class="select__genero" name="genero" required>
+              <option selected disabled value="">Selecione</option>
+                  <option>Cisgênero</option>
+                  <option>Transgênero</option>
+                  <option>Não-binário</option>
+                  <option>Prefiro não informar</option>
+            </select>
+          <p >Ao clicar em “Criar Conta”, eu aceito que li e aceitei os Termos de Uso e Políticas de Privacidade</p>
+          <div class="buttom_cadastro">
+            <button class="btn__cadastro" type="submit">Criar conta</button>
+          </div>
+        </div>
+          </form>
+        </section>
+    </main>
+    <%-include('./partials/footer')%>
+  </body>
+</html>

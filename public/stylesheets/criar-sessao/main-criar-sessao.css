@@ -1,0 +1,27 @@
+.main__criar__sessao{
+    display: flex;
+    justify-content: center;
+    height: 750px;
+}
+
+.criar__sessao{
+    align-items: center;
+    background: rgba(196, 196, 196, 0.1);
+    display: flex;
+    height: 40rem ;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0rem;
+    padding-left: 1rem;
+    width: 42rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.linha__horizontal{
+    color: white;
+    height: 3px;
+    margin-top: 2rem;
+    width: 38rem;
+}
+

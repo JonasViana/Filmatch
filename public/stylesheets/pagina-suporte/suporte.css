@@ -1,0 +1,62 @@
+.formCont {
+    width: 80%;
+    gap: 2rem;
+    max-height: 600px;
+  }
+  
+  .formCont img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .suportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    font-size: 20px;
+  }
+  .buttom_suporte{
+    background-color: #8E0E00;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    font-family: "Poppins";
+    font-weight:500;
+    color: white;
+    margin-left: 15rem;
+  }
+  
+  .buttom_suporte:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+  }
+  
+  .inputText {
+    width: 70%;
+    background-color: var(--white-light);
+    opacity: 0.7;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    overflow: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .inputText:focus {
+    opacity: 0.8;
+  }
+  
+  .disclaimer {
+    font-size: 12px;
+    text-align: center;
+  }

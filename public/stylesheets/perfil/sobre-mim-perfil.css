@@ -1,0 +1,29 @@
+.sobreMim__Perfil{
+   border-radius: 5px;
+   height: 38rem;
+   background-color: rgba(196, 196, 196, 0.1);
+   padding: 1rem;
+   width: 25rem ; 
+   display: flex;
+   flex-direction: column;
+   margin-right: 2rem;
+   margin-top: 2rem;
+ }
+ 
+ .alterar__perfil{
+    background-color: #8e0e00;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    color: white;
+    width: 8rem;
+    font-family: 'poppins';
+    margin-left: 8rem;
+    margin-top: 2rem;
+ }
+
+ .alterar__perfil:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+ }

@@ -1,0 +1,21 @@
+<%-include('./partials/head')%>
+
+<body>
+    <%-include('./partials/header')%>
+    <main class="main__painel__usuario">
+        <div class="configuracoes">
+            <p><strong>Configuraçoes</strong></p>
+            <a class="link__config" href="/perfilUsuario"><p>Geral</p></a>
+            <a class="link__config" href="/editarPerfil"><p>Editar Perfil</p></a>
+            <a class="link__config" href="/chamadasSuporte"> <p>Chamadas do Suporte</p></a>
+        </div>
+        <div class="chamada__suporte">
+            <h3>Suas chamadas de suporte</h3>
+            <div class="ticket">
+                <p>Ticket 0</p>
+                <a href="/suporte"><button>Acompanhar ticket</button></a>
+            </div>
+        </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>

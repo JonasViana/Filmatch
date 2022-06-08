@@ -1,0 +1,71 @@
+.editar__configuracoes{
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 46rem;
+    line-height: 1.9rem;
+    padding: 3rem;
+    width: 52rem;
+    align-items: center;
+}
+
+.opcoes__configuracoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.input__dados{
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input__config{
+
+    border: none;
+    border-radius: 0.3rem;
+    display: flex;
+    height: 1.5rem;
+    margin-top: 1.2rem;
+    width: 39rem;
+}
+
+.button__config{
+    align-items: center;
+    background-color: #8e0e00;
+    border: none;
+    border-radius: 0.6rem;
+    color: #f5f4f3;
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 13rem;
+}
+
+.button__config:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.button__salvar__config{
+    display: flex;
+    justify-content: center;
+}
+
+.chamada__suporte{
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+    height: 46rem;
+    line-height: 1.9rem;
+    padding: 3rem;
+    width: 52rem;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+.main__todos_filmes{
+    display: flex;
+    justify-content: center;
+}
+
+.caixa{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 99.5rem;
+    height: 32rem;
+    background-color: rgba(196, 196, 196, 0.1);
+    border-radius: 10px;
+}
+
+.filmes{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 3rem;
+}
+
+.filmes2{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.filmes__status{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: flex-end;
+    margin-left: 1rem;
+}
+.btn__ver__mais{
+    border: none;
+    border-radius: 5px;
+    background-color:#8e0e00;
+    color: white;
+    height: 2rem;
+    width: 6rem;
+}
+
+.btn__ver__mais:hover{
+    background-color: var(--white-light);
+    color: var(--main-light);
+    opacity: 0.8;
+}
+
+.filme__poster{
+    display: flex;
+    height: 200px;
+    width: 400px;
+}

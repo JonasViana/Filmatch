@@ -1,0 +1,7 @@
+.main__perfil{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 68rem;
+}
+

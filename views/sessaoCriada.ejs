@@ -1,0 +1,18 @@
+<%-include('./partials/head')%>
+<body>
+    <%-include('./partials/header')%>
+    <main class="main__sessao_criada">
+        <div class="sessao__criada">
+            <h2>Sessão : <%= sessoes[filmeID].nome %> </h2>
+            <h3>Infomaçoes sobre a sessão</h3>
+            <div class="info_sessoes_criadas">
+                <p>Filme : <%= sessoes[filmeID].nome %></p>
+                <p>Dia : <%= sessoes[filmeID].data %></p>
+                <p>Hora : <%= sessoes[filmeID].horario %></p>
+                <p>Link para o Discord : <%= sessoes[filmeID].link %></p>
+            </div>
+            <a href="/movies"><button>Voltar para home</button></a>
+        </div>
+    </main>
+    <%-include('./partials/footer')%>
+</body>

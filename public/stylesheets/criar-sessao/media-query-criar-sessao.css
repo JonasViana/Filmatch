@@ -1,0 +1,47 @@
+@media screen and (max-width: 480px){
+    .main__criar__sessao{
+        display: flex;
+        height: 63rem;
+    }
+    
+    .criar__sessao{
+        margin-top: 0.5rem;
+        width: 25rem;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .criar__sessao h3{
+        margin-left: 6rem;
+    }
+
+    .input__titulo{
+        width: 22rem !important;
+        margin-left: 6rem;
+    }
+
+    .input__descricao{
+        width: 22rem !important;
+        margin-left: 6rem;
+    }
+
+    .input__data{
+        display: flex;
+        flex-direction: column;
+        margin-left: 6rem;
+    }
+
+    .img_usuarios img{
+        display: none;
+    }
+
+    .input__convidados{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input__convidados button{
+        margin-left: 6rem;
+    }
+
+}
