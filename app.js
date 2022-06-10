@@ -1,3 +1,4 @@
+require('dotenv').config()
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -6,6 +7,7 @@ const logger = require('morgan');
 const session = require('express-session')
 const logMiddleware = require('./middlewares/logSite')
 const bodyParser = require('body-parser')
+
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const suporteRouter = require('./routes/suporte');
@@ -35,10 +37,10 @@ app.use(bodyParser.json())
 
 
 // habilitando sessions
-
+const secret = process.env.SECRET
 
 app.use(session({
-	secret: 'filmatch',
+	secret: secret,
 
 	resave: false,
 
