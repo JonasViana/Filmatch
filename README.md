@@ -70,11 +70,6 @@ Pagina onde é exibido o resultado de busca enquanto o input estiver vazio
 
 ![alt text](/public/images/resultado-busca.png)
 
-### Resultado de busca unica
-
-Pagina onde é exibido o resultado de uma busca e as proximas sessoes do filme.
-
-![alt text](/public/images/reesultado-busca-unico.png)
 
 ### Perfil
 
