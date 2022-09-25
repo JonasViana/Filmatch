@@ -11,9 +11,6 @@ const loginController = {
                 email: email,
             }
         }).then(result => result.dataValues)
-        console.log(req.body)
-        console.log(usuario.senha)
-        console.log(bcrypt.compareSync(senha, usuario.senha))
 
         if (!usuario) {
             return res.render('login', {erro:'Email e/ou senha estão incorretos. Tente novamente'})
